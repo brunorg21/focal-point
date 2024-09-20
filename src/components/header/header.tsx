@@ -7,23 +7,25 @@ export function Header() {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.logo}>
-        <Image alt="Logo" src={logo} width={64} height={64} />
+        <Image alt="Logo" src={logo} width={33} height={33} />
         <Image
           alt="Company name"
           src={companyName}
-          width={"106.14"}
-          height={"15.5"}
+          width={106.4}
+          height={15.5}
         />
       </div>
 
       <span className={styles.message}>Bem-vindo de volta, Marcus</span>
       <span className={styles.date}>
-        {new Date().toLocaleDateString("pt-BR", {
-          weekday: "long",
-          year: "numeric",
-          month: "long",
-          day: "2-digit",
-        })}
+        {new Date()
+          .toLocaleDateString("pt-BR", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "2-digit",
+          })
+          .replace(/^\w/, (c) => c.toUpperCase())}
       </span>
     </div>
   );
