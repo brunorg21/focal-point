@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 386px;
+  gap: 2rem;
+  h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: black;
+  }
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.formInputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input {
+    outline: 0;
+    border: 1px solid #D7DDE9;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+}

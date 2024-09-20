@@ -1,0 +1,49 @@
+.defaultButton {
+  width: 100%;
+  border: none;
+  background: linear-gradient(#0796D3, #53C0F0);
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.7;
+  }
+}
+.cancelButton {
+  width: 100%;
+  border: none;
+  background: #E7EEFB;
+  padding: 1rem;
+  border-radius: 8px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.7;
+  }
+}
+
+.deleteButton {
+  width: 100%;
+  border: none;
+  background: linear-gradient(90deg, #D30707 0%, #F05353 68.65%);
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.7;
+  }
+}

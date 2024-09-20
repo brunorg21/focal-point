@@ -1,0 +1,53 @@
+.taskCardContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px dotted #D7DDE9;
+  gap: 1rem;
+
+
+  &:hover {
+    background-color: #F7F9FD;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  span {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.18rem;
+  }
+
+  input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #D7DDE9;
+    border-radius: 8px;
+    -webkit-appearance: none; 
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  input[type="checkbox"]:checked {
+    border: 1px solid #0796D3;
+    background-color: #A0DCF6;
+  }
+  input[type="checkbox"]:checked::before {
+    content: '✓';
+    font-size: 1rem;
+    color: #0796D3;
+    position: absolute;
+    transform: rotate(15deg);
+    left: 0.3rem;
+  }
+}

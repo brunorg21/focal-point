@@ -1,0 +1,28 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #D7DDE9;
+}
+
+
+
+.message {
+  font-size: 1.5rem;
+  line-height: 1.18rem;
+  font-weight: 500;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.18rem;
+  color: #0000008A;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 0.6525rem;
+}
