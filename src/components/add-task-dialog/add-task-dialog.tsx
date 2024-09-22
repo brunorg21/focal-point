@@ -27,8 +27,8 @@ export function AddTaskDialog({ setOpen, setTasks }: AddTaskDialogProps) {
         return updatedTasks;
       });
       setError("");
-      setOpen(false);
       setTitle("");
+      setOpen(false);
     } else {
       setError("Preencha o campo com o nome da tarefa");
     }
@@ -45,6 +45,7 @@ export function AddTaskDialog({ setOpen, setTasks }: AddTaskDialogProps) {
             placeholder="Digite"
             type="text"
             id="title"
+            value={title}
           />
           {error && <p className={styles.errorMessage}>{error}</p>}
         </div>
